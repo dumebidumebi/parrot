@@ -7,7 +7,7 @@ import Link from "next/link";
 import { MessagesSquareIcon } from "lucide-react";
 import CreateChatButton from "./ui/CreateChatButton";
 
-export default async function Headers() {
+export default async function Header() {
   const session = await getServerSession(authOptions)
   
   return (

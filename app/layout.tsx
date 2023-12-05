@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Headers from '@/components/Header'
+import Header from '@/components/Header'
 import { ThemeProvider } from '@/components/ui/ThemeProvider'
 import ClientProviders from '@/components/ui/ClientProviders'
 import FirebaseAuthProvider from '@/components/ui/FirebaseAuthProvider'
@@ -29,7 +29,7 @@ export default function RootLayout({
          enableSystem
          disableTransitionOnChange
         >
-        <Headers/>
+        <Header/>
         {children}
         </ThemeProvider>
         </FirebaseAuthProvider>

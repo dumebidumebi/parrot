@@ -25,7 +25,7 @@ export default function UserButton({session}:{session: Session | null}) {
  return  session && (
     <DropdownMenu>
   <DropdownMenuTrigger>
-    <UserAvatar name={session.user?.name} image={session.user?.image}/>
+    <UserAvatar name={session.user?.name ?? ''} image={session.user?.image ?? ''}/>
   </DropdownMenuTrigger>
   <DropdownMenuContent>
     <DropdownMenuLabel>{session.user?.name}</DropdownMenuLabel>
